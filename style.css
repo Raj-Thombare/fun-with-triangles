@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(90deg,#000046,#1CB5E0);
+    color: white;
+    font-family: 'Georama', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom:15px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+/* container */
+
+.container {
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-container {
+    margin: 20px 10px;
+    text-align: start;
+}
+.answer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0px 30px;
+}
+
+/* navigation  */
+
+.navigation {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-back {
+    transition: all 0.25s ease-in-out 0s;
+}
+
+.nav-back img {
+    margin: 30px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #000046;
+    border: 1px solid #1CB5E0;
+    color: #1CB5E0;
+    margin: 0px 0px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 32%;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+.square:hover {
+    background-color:#1CB5E0 ;
+    color:#000046;
+    border: 1px solid #000046;
+}
+
+a {
+    text-decoration: none;
+}
+
+.quiz-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+/* input and output */
+
+input {
+    margin: 20px;
+    padding: 10px;
+    width: 50px;
+}
+
+#output-div {
+    font-size: 1.3rem;
+    padding: 1.5rem;
+}
+
+/* button */
+
+button {
+    margin: 1rem auto;
+    padding: .7rem 1.5rem;
+    border: 1px solid #1CB5E0;
+    border-radius: 3px;
+    background-color: #000046;
+    color: #1CB5E0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .25s ease-in-out 0s;
+}
+
+button:hover {
+    background-color: lightskyblue;
+    color:#000046;
+    border: 1px solid #000046;
+}
+
+/* footer */
+
+footer {
+    min-height: 6vh;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+footer ul li a {
+    color: white;
+}

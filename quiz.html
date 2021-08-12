@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun With Triangles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="/index.html" class="nav-back"><img src="/images/back-button.png" width="40px"></a>
+    <h1>Quiz</h1>
+    <form class="quiz-form">
+        <div class="question-container">
+            <p>1) If a triangle has angles 135<sup>0</sup>, 15<sup>0</sup>. what will be the third angle?</p>
+            <div class="answer-container">
+                <label><input type="radio" name="question1" value="30" required />30<sup>0</sup></label>
+                <label><input type="radio" name="question1" value="60" required />60<sup>0</sup></label>
+                <label><input type="radio" name="question1" value="90" required />90<sup>0</sup></label>
+            </div>
+        </div>
+        <div class="question-container">
+            <p>2) If one angle of a triangle is 90<sup>0</sup>,then the triangle is called?</p>
+            <div class="answer-container">
+                <label><input type="radio" name="question2" value="Obtuse triangle" required />Obtuse trianlges</label>
+                <label><input type="radio" name="question2" value="Acute triangle" required />Acute triangle</label>
+                <label><input type="radio" name="question2" value="Right angled triangle" required />Right angled triangle</label>
+            </div>
+        </div>
+        <div class="question-container">
+            <p>3)  If angle1 = 50<sup>0</sup>, angle2 = 50<sup>0</sup> and angle3 = 80<sup>0</sup>. then which triangle is it?</p>
+            <div class="answer-container">
+                <label><input type="radio" name="question3" value="Obtuse triangle" required />Obtuse trianlges</label>
+                <label><input type="radio" name="question3" value="Acute triangle" required />Acute triangle</label>
+                <label><input type="radio" name="question3" value="Right angled triangle" required />Right angled triangle</label>
+            </div>
+           
+        </div>
+        <div class="question-container">
+            <p>4) Sum of all angles of a triangle should be?</p>
+            <div class="answer-container">
+                <label><input type="radio" name="question4" value="360" required>360<sup>0</sup></label>
+                <label><input type="radio" name="question4" value="180" required>180<sup>0</sup></label>
+                <label><input type="radio" name="question4" value="90" required>90<sup>0</sup></label>
+            </div>
+            
+        </div>
+        <div class="question-container">
+            <p>5) If angle1 = 120<sup>0</sup>, angle2 = 40<sup>0</sup> and angle3 = 20<sup>0</sup>. then the triangle is called?</p>
+            <div class="answer-container">
+                <label><input type="radio" name="question5" value="Obtuse triangle" required />Obtuse trianlges</label>
+                <label><input type="radio" name="question5" value="Acute triangle" required />Acute triangle</label>
+                <label><input type="radio" name="question5" value="Right angled triangle" required />Right angled triangle</label>
+            </div>
+            
+        </div>
+        <button id="btn-submit">Submit Answers</button>
+    </form>
+    <div id="output-div"></div>
+    <script src="/quiz.js"></script>
+</body>
+
+</html>

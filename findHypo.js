@@ -6,8 +6,18 @@ const output = document.querySelector("#output-div")
 function btnCalculateHandler(){
     const a = Number(sideA.value);
     const b = Number(sideB.value);
-    const c = calculateHypotenuse(a,b);
-    output.innerText = `Hypotenuse is ${c} cm`;
+
+    if(a > 0){
+        if(b > 0){
+            const c = calculateHypotenuse(a,b);
+            output.innerText = `Hypotenuse is ${c} cm`;
+        }else{
+            output.innerText = "Negative (-) values are not valid!";
+        }  
+    }else{
+        output.innerText = "Negative (-) values are not valid!";
+    }
+    
 };
 
 function calculateHypotenuse(a,b){

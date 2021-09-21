@@ -7,11 +7,15 @@ function checkBtnHandler(){
     const angle1 = Number(angleInput[0].value);
     const angle2 = Number(angleInput[1].value);
     const angle3 = Number(angleInput[2].value);
-    const sumOfAngles = calculateSumOfAngles(angle1,angle2,angle3);
-    if(sumOfAngles === 180){
-        output.innerText = "Yay! it's a triangle😇"
+
+    if(angle1 === 90 && angle2 === 90){
+        output.innerText = "A triangle can have only one 90 degree angle!";
+    }else if(angle2 === 90 && angle3 === 90){
+        output.innerText = "A triangle can have only one 90 degree angle!";
+    }else if(angle1 === 90 && angle3 === 90){
+        output.innerText = "A triangle can have only one 90 degree angle!";
     }else{
-        output.innerText = "Oops! it's not a triangle😭"
+        isTriangle(angle1,angle2,angle3);
     }
 };
 
@@ -20,6 +24,13 @@ function calculateSumOfAngles(a,b,c){
     return sumOfAngles
 };
 
-
+function isTriangle(x,y,z){
+    var sumOfAngles = calculateSumOfAngles(x,y,z)
+    if(sumOfAngles === 180){
+        output.innerText = "Yay! it's a triangle😇"
+    }else{
+        output.innerText = "Oops! it's not a triangle😭"
+    }
+};
 
 btnCheck.addEventListener("click",checkBtnHandler)

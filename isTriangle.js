@@ -8,7 +8,8 @@ function checkBtnHandler(){
     const angle2 = Number(angleInput[1].value);
     const angle3 = Number(angleInput[2].value);
 
-    if(angle1 === 90 && angle2 === 90){
+    if(angle1 > 0 && angle2 > 0 && angel3 > 0){
+        if(angle1 === 90 && angle2 === 90){
         output.innerText = "A triangle can have only one 90 degree angle!";
     }else if(angle2 === 90 && angle3 === 90){
         output.innerText = "A triangle can have only one 90 degree angle!";
@@ -16,6 +17,9 @@ function checkBtnHandler(){
         output.innerText = "A triangle can have only one 90 degree angle!";
     }else{
         isTriangle(angle1,angle2,angle3);
+    }
+    }else{
+      output.innerText = "Triangle's angles should be positive!";
     }
 };
 

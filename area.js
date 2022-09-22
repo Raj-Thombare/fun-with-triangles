@@ -12,10 +12,10 @@ function areaIs(){
        if(area > 0 & height > 0){
           output.innerText = `The area of triangle is ${area} cm`;
        }else{
-        output.innerText = "Base and Height of triangle should be positive";
+        output.innerText = "Base and Height of a triangle should be greater than 0!";
        }
     }else{
-     output.innerText = "Base and Height of a triangle should be greater than 0!";
+     output.innerText = "Please enter Base and Height of a triangle!";
     }
 }
 

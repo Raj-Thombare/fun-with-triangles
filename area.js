@@ -15,7 +15,7 @@ function areaIs(){
         output.innerText = "Base and Height of triangle should be positive";
        }
     }else{
-     output.innerText = "Please enter base and height of triangle!";
+     output.innerText = "Base and Height of a triangle should be greater than 0!";
     }
 }
 
